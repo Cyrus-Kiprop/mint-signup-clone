@@ -1,0 +1,53 @@
+i* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #eceef1;
+}
+header {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .header--image {
+  width: 118px;
+  height: 35px;
+  background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/1.6.5/images/ecosystem_logos_new.png);
+}
+
+.header--links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 380px;
+  border: 1px solid black;
+}
+.header--mint-bg {
+  height: 23px;
+  display: inline-block;
+  width: 64px;
+  background-position: -254px 27px;
+  background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/1.6.5/images/ecosystem_logos_new.png);
+}
+
+.header--quickbooks-bg {
+  width: 126px;
+  background-position: -115px 27px;
+  height: 23px;
+  display: inline-block;
+  background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/1.6.5/images/ecosystem_logos_new.png);
+}
+
+.header--turbotax-bg {
+  width: 101px;
+  background-position: 0 27px;
+  height: 23px;
+  display: inline-block;
+  background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/1.6.5/images/ecosystem_logos_new.png);
+}
