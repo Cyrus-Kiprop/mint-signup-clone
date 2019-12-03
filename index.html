@@ -12,11 +12,13 @@
           <p>Already have an Intuit account?</p>
           <p><a href="">I forgot my User ID or Password</a></p>
         </div>
-        <button><span class="navigation--wrapper--lock-icon"></span>Sign In</button>
+        <button>
+          <span class="navigation--wrapper--lock-icon"></span>Sign In
+        </button>
       </div>
 
       <div class="header--image">
-          <a class="logo"> </a>
+        <a class="logo"> </a>
       </div>
 
       <div class="header--links">
@@ -29,22 +31,50 @@
     <main>
       <form action="" class="signup--form">
         <div class="signup--form-header">
-            <h3>Create an Intuit account</h3>
-            <span>One account for everything Intuit, including Mint.</span>
-            <a>Learn more</a>
+          <h3>Create an Intuit account</h3>
+          <span>One account for everything Intuit, including Mint.</span>
+          <a>Learn more</a>
         </div>
 
         <fieldset>
           <label>Email Address</label>
           <input type="email" />
 
+          <label>Phone (recommended)</label>
+          <input type="tel" />
+          <div class="warning--display-mobile-phone">
+            We strongly recommend adding a phone number. This will help verify
+            your account and keep it safe.
+          </div>
+
+          <span class="tel--sms-charge-warning">
+            Standard call, messaging or data rates may apply.
+          </span>
+
+          <label class="tel--verify-container">
+            <div>
+              <input type="checkbox" />
+            </div>
+            <span>
+              Verify with text message(most secure )
+            </span>
+          </label>
+        </fieldset>
+        <fieldset class="password-container">
+          <label>Password</label>
+          <input type="password" />
+          <ul>
+            <li>Use 8 or more character</li>
+            <li>Use upper and lower case characters (e.g. Aa)</li>
+            <li>Use a number (e.g. 1234)</li>
+            <li>Use a symbol (e.g. !@#$)</li>
+          </ul>
+          <label>Confirm Password</label>
+          <input type="password" />
         </fieldset>
       </form>
-
     </main>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
