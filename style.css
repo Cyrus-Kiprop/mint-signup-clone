@@ -165,29 +165,28 @@ fieldset input[type="password"] {
 }
 
 fieldset input:focus {
-  border: 1px solid #c1c5c8;
-
-  /* box-shadow: ; */
+  border: 1px solid #52a8ec;
+  outline: 0;
+  border-color: rgba(82, 168, 236, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
 }
 
 .warning--display-mobile-phone {
   color: #ea7f00;
+  font-size: 14px;
 }
 
 .tel--verify-container {
   display: flex;
   flex-direction: row;
   width: 100%;
-
-  /* justify-content: space-between; */
   align-items: flex-start;
 }
 
-.tel--verify-container div input[type="checkbox"] {
+.tel--verify-container input[type="checkbox"] {
   width: 15px;
   height: 15px;
   align-self: center;
-  margin-top: 5px;
   margin-right: 5px;
   display: inline-block;
   font-size: 10px;
@@ -203,7 +202,7 @@ fieldset input:focus {
   padding-left: 5px;
   font-size: 12px;
   list-style-type: none;
-  color: #c8c8ce;
+  color: #eb3432;
 }
 
 .password-container ul li::before {
@@ -234,4 +233,62 @@ fieldset input:focus {
   margin-top: 20px;
   font-size: 14px;
   display: block;
+}
+
+.signup--form-input-error {
+  min-height: 20px;
+  margin: 5px 0;
+  display: block;
+  color: #eb3432;
+  word-wrap: break-word;
+}
+
+.signup--form button[type="submit"] {
+  background: #0077c5;
+  border-radius: 4px;
+  padding: 6px 12px;
+  color: white;
+  font-size: 15.75px;
+  line-height: 1.6em;
+  width: 100%;
+  height: 44px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.signup--form p {
+  text-align: center;
+  font-style: italic;
+  color: #757575;
+  margin-bottom: 32px;
+}
+
+.signup--form p::before {
+  display: block;
+  content: 'By clicking Create account, you agree to our';
+  line-height: 1.8em;
+}
+
+.signup--form-footer {
+  background: #eceef1;
+  text-align: center;
+  padding: 16px;
+  display: block;
+  margin: 0 -30px -30px;
+  font-size: 10px;
+  color: #8d9096;
+}
+
+footer {
+  margin: 0 96px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer--links a {
+  padding-right: 5px;
+  text-decoration: none;
+  color: inherit;
 }
