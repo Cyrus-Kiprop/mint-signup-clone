@@ -1,0 +1,293 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background: #eceef1;
+  font-family:
+    AvenirNext,
+    Avenir,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #505050;
+}
+
+a {
+  text-decoration: none;
+  color: #0077c5;
+}
+
+.navigation--wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: space-between;
+  padding: 10px 30px;
+}
+
+.navigation--wrapper-content {
+  padding-right: 10px;
+}
+
+.navigation--wrapper button {
+  background: #0077c5;
+  border-radius: 4px;
+  padding: 0 20px 0 20px;
+  border: 1px solid black;
+  color: white;
+  font-size: 13.5px;
+  line-height: 1.6em;
+}
+
+span.navigation--wrapper--lock-icon {
+  background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/1.6.5/images/icon-whitelock@3x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 0.8em;
+  width: 0.8em;
+  display: inline-block;
+  margin: 2px 4px 0 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header--image {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 118px;
+  height: 35px;
+  background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/1.6.5/images/ecosystem_logos_new@2x.png);
+  background-size: 562px 83px;
+}
+
+.header--links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.header--links a {
+  margin-right: 10px;
+}
+
+.header--mint-bg {
+  height: 23px;
+  display: inline-block;
+  width: 64px;
+  background-position: -254px 27px;
+  background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/1.6.5/images/ecosystem_logos_new.png);
+}
+
+.header--quickbooks-bg {
+  width: 126px;
+  background-position: -115px 27px;
+  height: 23px;
+  display: inline-block;
+  background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/1.6.5/images/ecosystem_logos_new.png);
+}
+
+.header--turbotax-bg {
+  width: 101px;
+  background-position: 0 27px;
+  height: 23px;
+  display: inline-block;
+  background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/1.6.5/images/ecosystem_logos_new.png);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.signup--form {
+  background: white;
+  border-radius: 2px;
+  padding: 30px;
+  border: 1px solid #c7c7c7;
+  width: 380px;
+  box-sizing: border-box;
+  height: auto;
+  color: #4c4c4c;
+}
+
+label {
+  padding-bottom: 6px;
+  color: #404040;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset input {
+  border: 1px solid #c1c5c8;
+  padding: 0 6px 0 8px;
+  border-radius: 3px;
+  line-height: 1.3em;
+  color: #000;
+  outline: 0;
+  font-size: 1.2em;
+  display: block;
+  width: 100%;
+  height: 34px;
+  box-sizing: border-box;
+}
+
+fieldset input[type="tel"] {
+  background:
+    url(images/warning-exclamation-mark.svg) 98% 50%/22px 22px
+    no-repeat;
+}
+
+fieldset input[type="password"] {
+  background: url(images/padlock.svg) 98% 50%/22px 22px no-repeat;
+}
+
+fieldset input:focus {
+  border: 1px solid #52a8ec;
+  outline: 0;
+  border-color: rgba(82, 168, 236, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+.warning--display-mobile-phone {
+  color: #ea7f00;
+  font-size: 14px;
+}
+
+.tel--verify-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.tel--verify-container input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  align-self: center;
+  margin-right: 5px;
+  display: inline-block;
+  font-size: 10px;
+  background: none;
+  color: green;
+}
+
+.password-container ul {
+  padding: 10px 5px;
+}
+
+.password-container ul li {
+  padding-left: 5px;
+  font-size: 12px;
+  list-style-type: none;
+  color: #eb3432;
+}
+
+.password-container ul li::before {
+  content: url(images/number-close.svg);
+  height: 9px;
+  width: 9px;
+  font-weight: bold;
+  padding-top: 1px;
+  margin: 0 5px 0 0;
+  color: #c8c8ce;
+  box-sizing: border-box;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.signup--form-header {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.signup--form-header h3 {
+  font-size: 24px;
+  line-height: 1.1em;
+  font-weight: 100;
+}
+
+.signup--form-header span {
+  margin-top: 20px;
+  font-size: 14px;
+  display: block;
+}
+
+.signup--form-input-error {
+  min-height: 20px;
+  margin: 5px 0;
+  display: block;
+  color: #eb3432;
+  word-wrap: break-word;
+}
+
+.signup--form button[type="submit"] {
+  background: #0077c5;
+  border-radius: 4px;
+  padding: 6px 12px;
+  color: white;
+  font-size: 15.75px;
+  line-height: 1.6em;
+  width: 100%;
+  height: 44px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.signup--form p {
+  text-align: center;
+  font-style: italic;
+  color: #757575;
+  margin-bottom: 32px;
+}
+
+.signup--form p::before {
+  display: block;
+  content: 'By clicking Create account, you agree to our';
+  line-height: 1.8em;
+}
+
+.signup--form-footer {
+  background: #eceef1;
+  text-align: center;
+  padding: 16px;
+  display: block;
+  margin: 0 -30px -30px;
+  font-size: 10px;
+  color: #8d9096;
+}
+
+footer {
+  margin: 0 96px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer--links a {
+  padding-right: 5px;
+  text-decoration: none;
+  color: inherit;
+}
